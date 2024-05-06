@@ -12,14 +12,15 @@ Materials for the Fall 2023 PSU One Health Microbiome Center KickStart Workshop
 - Emily Davenport	(co-chair) (exd44@psu.edu)
   
 ### Tutors:
-- David Koslicki	(dmk333@psu.edu)
-- Emily Davenport	(exd44@psu.edu)  
 - Sharifa Crandall	(sgcrandall@psu.edu)  
 - Estelle Couradeau	(efc5279@psu.edu) 
-- Darrell Cockburn	(dwc30@psu.edu)  
-- Erika Ganda		(ganda@psu.edu)
+- Darrell Cockburn	(dwc30@psu.edu)
+- Emily Davenport	(exd44@psu.edu)  
 - Francisco Dini-Andreote (adreote@psu.edu)
+- Erika Ganda		(ganda@psu.edu)
 - Nichole Ginnan (nginnan@psu.edu)
+- David Koslicki	(dmk333@psu.edu)
+
 
 ### TAs:
 - Jamie Spychalla 
