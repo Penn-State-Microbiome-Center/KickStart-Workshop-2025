@@ -3,8 +3,8 @@
 Materials for the Fall 2023 PSU One Health Microbiome Center KickStart Workshop
 
 ## Details
-**Dates**: August X - Y, 2024  
-**Time**: Wam - Zpm each day  
+**Dates**: August 12 - 16, 2024  
+**Time**: 9am - 2pm each day  
 **Location**: In person in XXXX
 
 ### Organizers
