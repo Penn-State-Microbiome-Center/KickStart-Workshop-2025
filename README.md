@@ -7,6 +7,10 @@ Materials for the Fall 2023 PSU One Health Microbiome Center KickStart Workshop
 **Time**: Wam - Zpm each day  
 **Location**: In person in XXXX
 
+### Organizers
+- Francisco Dini-Andreote (co-chair)	(adreote@psu.edu)
+- Emily Davenport	(co-chair) (exd44@psu.edu)
+  
 ### Tutors:
 - David Koslicki	(dmk333@psu.edu)
 - Emily Davenport	(exd44@psu.edu)  
@@ -14,8 +18,8 @@ Materials for the Fall 2023 PSU One Health Microbiome Center KickStart Workshop
 - Estelle Couradeau	(efc5279@psu.edu) 
 - Darrell Cockburn	(dwc30@psu.edu)  
 - Erika Ganda		(ganda@psu.edu)
-- Francisco Dini-Andreote (co-chair)	(adreote@psu.edu)
-- Nichole Ginnan (co-chair)	(nginnan@psu.edu)
+- Francisco Dini-Andreote (adreote@psu.edu)
+- Nichole Ginnan (nginnan@psu.edu)
 
 ### TAs:
 - Jamie Spychalla 
