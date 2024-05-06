@@ -1,11 +1,11 @@
 ![IntroImage](images/IntroImage.jpg)
-# KickStart-Workshop-2023
+# KickStart-Workshop-2024
 Materials for the Fall 2023 PSU One Health Microbiome Center KickStart Workshop
 
 ## Details
-**Dates**: August 9 - 11, 2023  
-**Time**: 9am - 5pm each day  
-**Location**: In person in 106 AVBS
+**Dates**: August X - Y, 2024  
+**Time**: Wam - Zpm each day  
+**Location**: In person in XXXX
 
 ### Tutors:
 - David Koslicki	(dmk333@psu.edu)
