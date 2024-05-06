@@ -3,8 +3,8 @@
 Materials for the Fall 2023 PSU One Health Microbiome Center KickStart Workshop
 
 ## Details
-**Dates**: August 12 - 16, 2024  
-**Time**: 9am - 2pm each day  
+**Dates**: August 12 - 15, 2024  (Optional intro to Unix on August 9th)
+**Time**: 9am start time each day. Ending in the afternoon (variable each day)
 **Location**: In person in XXXX
 
 ### Organizers
@@ -12,6 +12,7 @@ Materials for the Fall 2023 PSU One Health Microbiome Center KickStart Workshop
 - Emily Davenport	(co-chair) (exd44@psu.edu)
   
 ### Tutors:
+*Needs updated*
 - Sharifa Crandall	(sgcrandall@psu.edu)  
 - Estelle Couradeau	(efc5279@psu.edu) 
 - Darrell Cockburn	(dwc30@psu.edu)
@@ -23,12 +24,7 @@ Materials for the Fall 2023 PSU One Health Microbiome Center KickStart Workshop
 
 
 ### TAs:
-- Jamie Spychalla 
-- Abby Gancz
-- Christine Ta
-- Daniela Betancurt
-- Hanh Tran
-- Polina Tikhonova
+*TBD*
 
 ## Requirements
 A PSU email and access to Penn State’s Roar system is required prior to the workshop. You can do this by going to https://accounts.aci.ics.psu.edu, and entering your information.  For the purposes of this workshop, please list Francisco Dini Andreote (fjd5141) as your account sponsor and put "2023 Microbiome Center Summer Workshop" into the "Research Description" field of the account request form. 
@@ -36,6 +32,7 @@ A PSU email and access to Penn State’s Roar system is required prior to the wo
 A laptop is also required for the workshop. You can either bring your own or email Nichole Ginnan (nginnan@psu.edu) before _July 28th_ to rent one for free. 
 
 ## Schedule
+*Needs updated*
 - Day 1 morning (8:30am - 12:30pm): Intro + [Basics of Microbiome Analysis - From Planning to Sequencing](/Day1-MicrobiomeAnalysisBasics) - Organizing Committee
 - Day 1 lunch (12:30pm - 1:30pm)
 - Day 1 afternoon (1:30pm - 5pm) [OPTIONAL]: [Unix Basics and Intro to R Programming](/Day1-UnixBasics) - Emily Davenport  
