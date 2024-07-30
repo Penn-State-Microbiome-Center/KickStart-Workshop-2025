@@ -75,7 +75,8 @@ ANI threshold of 0.99, 0.999, etc. It all depends on your use-case
 #### Running the algorithm
 Now that you've trained the algorithm, you can run it using the following command
 ```bash
-yacht run --json demo_ani_thresh_0.95_config.json --sample_file sample.sig.zip --significance 0.99 --num_threads ${NUM_THREADS} --min_coverage_list 1 0.6 0.2 0.1 --out ./result.xlsx
+yacht run --json demo_ani_thresh_0.95_config.json --sample_file sample.sig.zip --significance 0.99 --num_threads 2 
+--min_coverage_list 1 0.6 0.2 0.1 --out ./result.xlsx
 ```
 The argument to the `--json` parameter is the file stores info about where the training data is and how you trained 
 it. 
@@ -90,7 +91,49 @@ We've noticed that a minimum coverage of 0.05 is a balance between sensitivity a
 minimum coverage higher, you need to see more of the genome to say it's present, which is more specific but less 
 sensitive. And conversely, if you make the minimum coverage lower, you need to see less of the genome to say it's 
 present, which is more sensitive but less specific. Here's a figure to help you understand this trade-off:
+![Benchmark](Data/Benchmark.png)
+and
+![Benchmark2](Data/Benchmark2.png)
 
+#### Converting the format
+If you want to convert the format of the output to something more standardized, you can use the following command
+```bash
+yacht convert --yacht_output result.xlsx --sheet_name min_coverage0.2 --genome_to_taxid demo/toy_genome_to_taxid.tsv 
+--mode cami --sample_name 'MySample' --outfile_prefix cami_result --outdir ./
+```
+This converts the output to the [CAMI profiling format](https://github.
+com/CAMI-challenge/contest_information/blob/master/file_formats/CAMI_TP_specification.mkd). **Note**: this format is for presence _and_ relative 
+abundances, even though here we just use it for presence. So abundance-based measurements should not be used on this 
+format. 
+
+The `--genome_to_taxid` parameter is a file that maps genome names to their taxonomy IDs. Often you will need to 
+construct this file yourself if you are using a custom training database (which we encourage).
+
+Other formats available include: [cami](https://github.
+com/CAMI-challenge/contest_information/blob/master/file_formats/CAMI_TP_specification.mkd), [biom]
+(https://biom-format.org/), and [graphlan](http://segatalab.cibio.unitn.it/tools/graphlan/).
+
+This format allows for visualizing the taxonomy of the genomes present in your sample. For example, in our demo data,
+we have the following:
+```
+Bacteria
+└── Bacillota
+    └── Clostridia
+        ├── Eubacteriales
+        │   ├── Oscillospiraceae
+        │   │   ├── Pseudoflavonifractor
+        │   │   │   └── Pseudoflavonifractor_sp._MSJ-30
+        │   │   └── Acetivibrio
+        │   │       └── Acetivibrio_sp._MSJd-27
+        │   └── Eubacteriaceae
+        │       └── Eubacterium
+        │           ├── Eubacterium_sp._MSJ-21
+        │           └── Eubacterium_sp._MSJ-13
+        └── Lachnospirales
+            └── Lachnospiraceae
+                └── Blautia
+                    └── Blautia_sp._MSJ-19
+```
 
 
 
