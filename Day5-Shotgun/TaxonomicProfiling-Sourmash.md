@@ -38,6 +38,7 @@ ls *.gz | xargs -P6 -I{} gunzip {}  #<<-- decompresses the data in parallel
 cd ..  #<<-- move back up a directory
 ```
 # The MetaGenomQuest Tutorial
+(Courtesy of Judith Rodriguez: https://github.com/bioinfwithjudith/sourmash_tutorial)
 
 Each of you will get a random metagenomic sample and with the help of this tutorial, it is your quest to report the sample that you were tasked to study!
 
@@ -50,11 +51,11 @@ large-scale analyses. Therefore, the development of quick and accuarate computat
 
 Utilizing sourmash, we can sketch a simpler representation of the original genomic or metagenomic datasets using the FracMinHash approach. 
 
-![alt text](https://github.com/bioinfwithjudith/sourmash_tutorial/blob/main/src/Picture3.png)
+![alt text](Data/Picture3.png)
 
 Simply put it, a minimized set of k-mers (a subset of a string of length k) is produced from a fasta file with sequences of interest. The threshold to which the set is minimized is indicated by a scale factor, a parameter used to reduce the original set. Note that if a scale factor of 1 is utilized, the final FracMinHash sketch will be the original set of k-mers and as this number increases, the more the original set of k-mers will decrease for the final FracMinHash sketch. Each k-mer in the original set is passed through a Hash function, k-mers that minimize this function by having a value that is equal or less to the scale factor are used in the final FracMinHash sketch, FRAC(A) for example. 
 
-![alt text](https://github.com/bioinfwithjudith/sourmash_tutorial/blob/main/src/Picture6.png)
+![alt text](Data/Picture6.png)
 
 ## Comparing similarity of two FracMinHash sketches 
 
@@ -64,7 +65,7 @@ One of the beneficial tasks of sourmash is to estimate similarity between sketch
 
 **Containment.** The Containment index addresses this issue by estimating what is contained from one Set in another so the differing size of two sets is not an issue[[2]](#2).
 
-![alt text](https://github.com/bioinfwithjudith/sourmash_tutorial/blob/main/src/Picture8.png)
+![alt text](Data/Picture8.png)
 
 
 # Preprocessing data utilizing sourmash sketch
@@ -219,62 +220,170 @@ similarity   match
  76.2%       sample_002.fna
  ```
 
-## Search an md5 identifier and report similarity
 
-Let's revisit the signature file that was produced using the `--singleton` flag. A manifest file contains md5 identifiers for each sketch within a signature file. To create your manifest file, use the following command:
+# Other example uses
+(courtesy of the DIB lab: https://sourmash.readthedocs.io/en/latest/tutorial-basic.html)
 
-`sourmash sig manifest sample_001.fna.singleton.sig -o sample_001.manifest.csv`
-
-|Parameter      |Description|
-|---------------|----------|
-|sourmash sig manifest| The command that sourmash utilizes to produce a manifest file. |
-|sample_001.fna.singleton.sig       | signature filename 1 that includes a sketch for each sequence. |
-|-o           | Output name of manifest file. The output name can also be indicated using `--csv` |
-
-
-If you open the newly produced manifest file, you'll observe that each sketch in your signature file has a md5 identifier. For tutorial purposes, I only show the first few lines.
-
-|internal_location|md5|md5short|ksize|moltype|num|scaled|n_hashes|with_abundance|name|filename|
-|-|-|-|-|-|-|-|-|-|-|-|
-sample_001.fna.sig|d3513280b35b2a918a7181875c0683c8|d3513280|31|DNA|0|500|22|0|genome_A_sequence_A|datasets/sample_001.fna|
-sample_001.fna.sig|2d96ee330b6b295a06b70fdbfb75af34|2d96ee33|31|DNA|0|500|21|0|genome_A_sequence_0|datasets/sample_001.fna|
-sample_001.fna.sig|364c20a1ca43d3ae3e9ae7d9e9a6c837|364c20a1|31|DNA|0|500|19|0|genome_B_sequence_0|datasets/sample_001.fna|
-
-If we copy the first `md5` identifer in this file, we can `sourmash search` how much of this sequence is in **sample_002.fna.singleton.sig**
-
-`sourmash search sample_001.fna.singleton.sig sample_002.fna.singleton.sig --md5 d3513280b35b2a918a7181875c0683c8 --containment`
-
-The md5 identifier that we are interested in is found across three sequences in sample_002.fna.singleton.sig with the following percentages.
+Download some reads and a reference genome:
 
 ```
-== This is sourmash version 4.8.6. ==
-== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+mkdir ~/data
+cd ~/data
+curl -L https://osf.io/ruanf/download -o ecoliMG1655.fa.gz
+curl -L https://osf.io/q472x/download -o ecoli_ref-5m.fastq.gz
+```
+
+Compute a scaled signature from our reads:
+
+```
+mkdir ~/sourmash
+cd ~/sourmash
+
+sourmash sketch dna -p scaled=10000,k=31 ~/data/ecoli_ref*.fastq.gz -o ecoli-reads.sig
+```
+
+## Compare reads to assemblies
+
+Use case: how much of the read content is contained in the reference genome?
+
+Build a signature for an E. coli genome:
+
+```
+sourmash sketch dna -p scaled=1000,k=31 ~/data/ecoliMG1655.fa.gz -o ecoli-genome.sig
+```
+
+and now evaluate *containment*, that is, what fraction of the read content is
+contained in the genome:
+
+```
+sourmash search ecoli-reads.sig ecoli-genome.sig --containment
+```
+
+and you should see:
+
+```
 
 select query k=31 automatically.
-loaded query: genome_A_sequence_A... (k=31, DNA)
---
-loaded 10 total signatures from 1 locations.
-after selecting signatures compatible with search, 10 remain.
+loaded query: /home/jovyan/data/ecoli_ref-5m... (k=31, DNA)
+loaded 1 signatures.
 
-9 matches above threshold 0.080; showing first 3:
+1 matches:
 similarity   match
 ----------   -----
-100.0%       ref_gene
- 90.9%       genome_A_2
- 86.4%       genome_A_1
-WARNING: size estimation for at least one of these sketches may be inaccurate. ANI values will not be reported for these comparisons.
+ 31.0%       /home/jovyan/data/ecoliMG1655.fa.gz
 ```
-# Report abundance using sourmash gather
 
-One of the many tasks in metagenomic research, is reporting the abundanes of species within a sample. We can accomplish this utilizing `sourmash gather`.
 
-<span style="color:red">Unsure if this is working, running `sourmash gather --help` returning error</span>.
+Try the reverse, too!
 
+```
+sourmash search ecoli-genome.sig ecoli-reads.sig --containment
+```
+
+## Make and search a database quickly.
+
+Suppose that we have a collection of signatures (made with `sourmash
+compute` as above) and we want to search it with our newly assembled
+genome (or the reads, even!). How would we do that?
+
+Let's grab a sample collection of 50 E. coli genomes and unpack it --
+
+```
+mkdir ecoli_many_sigs
+cd ecoli_many_sigs
+
+curl -O -L https://github.com/sourmash-bio/sourmash/raw/latest/data/eschericia-sigs.tar.gz
+
+tar xzf eschericia-sigs.tar.gz
+rm eschericia-sigs.tar.gz
+
+cd ../
+
+```
+
+This will produce 50 files named `ecoli-N.sig` in the directory `ecoli_many_sigs/` --
+
+```
+ls ecoli_many_sigs
+```
+
+Let's turn this into an easily-searchable database with `sourmash index` --
+
+```
+sourmash index ecolidb ecoli_many_sigs/*.sig
+```
+
+and now we can search!
+
+```
+sourmash search ecoli-genome.sig ecolidb.sbt.zip -n 20
+```
+
+You should see output like this:
+
+```
+select query k=31 automatically.
+loaded query: /home/ubuntu/data/ecoliMG1655.... (k=31, DNA)
+loaded 0 signatures and 1 databases total.                                     
+
+49 matches; showing first 20:
+similarity   match
+----------   -----
+ 75.9%       NZ_JMGW01000001.1 Escherichia coli 1-176-05_S4_C2 e117605...
+ 73.0%       NZ_JHRU01000001.1 Escherichia coli strain 100854 100854_1...
+ 71.9%       NZ_GG774190.1 Escherichia coli MS 196-1 Scfld2538, whole ...
+ 70.5%       NZ_JMGU01000001.1 Escherichia coli 2-011-08_S3_C2 e201108...
+ 69.8%       NZ_JH659569.1 Escherichia coli M919 supercont2.1, whole g...
+ 59.9%       NZ_JNLZ01000001.1 Escherichia coli 3-105-05_S1_C1 e310505...
+ 58.3%       NZ_JHDG01000001.1 Escherichia coli 1-176-05_S3_C1 e117605...
+ 56.5%       NZ_MIWF01000001.1 Escherichia coli strain AF7759-1 contig...
+ 56.1%       NZ_MOJK01000001.1 Escherichia coli strain 469 Cleandata-B...
+ 56.1%       NZ_MOGK01000001.1 Escherichia coli strain 676 BN4_676_1_(...
+ 50.5%       NZ_KE700241.1 Escherichia coli HVH 147 (4-5893887) acYxy-...
+ 50.3%       NZ_APWY01000001.1 Escherichia coli 178200 gec178200.conti...
+ 48.8%       NZ_LVOV01000001.1 Escherichia coli strain swine72 swine72...
+ 48.8%       NZ_MIWP01000001.1 Escherichia coli strain K6412 contig_00...
+ 48.7%       NZ_AIGC01000068.1 Escherichia coli DEC7C gecDEC7C.contig....
+ 48.2%       NZ_LQWB01000001.1 Escherichia coli strain GN03624 GCID_EC...
+ 48.0%       NZ_CCQJ01000001.1 Escherichia coli strain E. coli, whole ...
+ 47.3%       NZ_JHMG01000001.1 Escherichia coli O121:H19 str. 2010EL10...
+ 47.2%       NZ_JHGJ01000001.1 Escherichia coli O45:H2 str. 2009C-4780...
+ 46.5%       NZ_JHHE01000001.1 Escherichia coli O103:H2 str. 2009C-327...
+
+```
+
+## Compare many signatures and build a tree.
+
+Compare all the things:
+
+```
+sourmash compare ecoli_many_sigs/* -o ecoli_cmp
+```
+
+Optionally, parallelize to 8 threads using `-p 8`:
+
+```
+sourmash compare -p 8 ecoli_many_sigs/* -o ecoli_cmp
+```
+
+and then plot:
+
+```
+sourmash plot --pdf --labels ecoli_cmp
+```
+
+which will produce files named `ecoli_cmp.matrix.pdf` and
+`ecoli_cmp.dendro.pdf`.
+
+Here's a PNG version:
+
+![E. coli comparison plot](Data/ecoli_cmp.png)
 
 
 # References
 <a id="1">[1]</a> 
-Brown, C. T., & Irber, L. (2016). sourmash: a library for MinHash sketching of DNA. Journal of open source software, 1(5), 27.
+Irber, L., et al. (2024). sourmash v4: A multitool to quickly search, compare, and analyze genomic and metagenomic data 
+sets. Journal of Open Source Software, 9(98), 6830. https://doi.org/10.21105/joss.06830
 
 <a id="2">[2]</a> 
 Koslicki, D., & Zabeti, H. (2019). Improving minhash via the containment index with applications to metagenomic analysis. Applied Mathematics and Computation, 354, 206-215.
