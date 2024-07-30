@@ -9,7 +9,7 @@ YACHT stands for **Y**es/No **A**nswers to **C**ommunity membership via **H**ypo
 1. 2. A value $A$ that indicates the threshold of Average Nucleotide Identity (ANI) above which two organisms will be considered biologically identical. 
 2. 3. the coverage $c$ needed for a given microbe's genome to be considered present in the sample. 
  
-YACHT then outputs the a file indicating the presence and absence of each of the organisms among those in the 
+YACHT then outputs a file indicating the presence and absence of each of the organisms among those in the 
 reference database in the sample. For more detailed explanation of the method, refer to the associated [publication]
 (https://doi.org/10.1093/bioinformatics/btae047).
 
@@ -30,7 +30,7 @@ conda activate yacht_env
 
 To download some demo data, you can use the following command
 ```bash
-yacht download demo --outfolder .
+yacht download demo --outfolder ./demo
 ```
 which will put some demo data in your current directory.
 
@@ -57,8 +57,7 @@ section. So all the same commands (like `sourmash sig info`) will work here as w
 #### Training the algorithm
 To train the algorithm, you would use the following command
 ```bash
-yacht train --ref_file ref.sig.zip --ksize 31 --num_threads 2 --ani_thresh 0.95 --prefix 'demo_ani_thresh_0.95' 
---outdir ./ --force
+yacht train --ref_file ref.sig.zip --ksize 31 --num_threads 2 --ani_thresh 0.95 --prefix 'demo_ani_thresh_0.95' --outdir ./ --force
 ```
 The most important parameter here is the `--ani_thresh` parameter which sets the threshold for Average Nucleotide 
 Identity (ANI) above which two organisms will be considered biologically identical. Since no genome will _exactly_ 
@@ -75,8 +74,7 @@ ANI threshold of 0.99, 0.999, etc. It all depends on your use-case
 #### Running the algorithm
 Now that you've trained the algorithm, you can run it using the following command
 ```bash
-yacht run --json demo_ani_thresh_0.95_config.json --sample_file sample.sig.zip --significance 0.99 --num_threads 2 
---min_coverage_list 1 0.6 0.2 0.1 --out ./result.xlsx
+yacht run --json demo_ani_thresh_0.95_config.json --sample_file sample.sig.zip --significance 0.99 --num_threads 2 --min_coverage_list 1 0.6 0.2 0.1 --out ./result.xlsx
 ```
 The argument to the `--json` parameter is the file stores info about where the training data is and how you trained 
 it. 
@@ -98,8 +96,7 @@ and
 #### Converting the format
 If you want to convert the format of the output to something more standardized, you can use the following command
 ```bash
-yacht convert --yacht_output result.xlsx --sheet_name min_coverage0.2 --genome_to_taxid demo/toy_genome_to_taxid.tsv 
---mode cami --sample_name 'MySample' --outfile_prefix cami_result --outdir ./
+yacht convert --yacht_output result.xlsx --sheet_name min_coverage0.2 --genome_to_taxid demo/toy_genome_to_taxid.tsv --mode cami --sample_name 'MySample' --outfile_prefix cami_result --outdir ./
 ```
 This converts the output to the [CAMI profiling format](https://github.
 com/CAMI-challenge/contest_information/blob/master/file_formats/CAMI_TP_specification.mkd). **Note**: this format is for presence _and_ relative 
