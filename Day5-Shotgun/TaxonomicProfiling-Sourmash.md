@@ -391,4 +391,4 @@ Koslicki, D., & Zabeti, H. (2019). Improving minhash via the containment index w
 <a id="3">[3]</a> 
 Hera, M. R., Pierce-Ward, N. T., & Koslicki, D. (2023). Deriving confidence intervals for mutation rates across a wide range of evolutionary distances using FracMinHash. Genome research, 33(7), 1061-1068.
 
-# Please proceed to the [mOTUs2 Section](TaxonomicProfiling-mOTUs2.md)
+# Please proceed to the [YACHT Section](TaxonomicProfiling-YACHT.md)
