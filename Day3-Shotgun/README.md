@@ -10,26 +10,16 @@
 # Reminder if you forget how to access the ACI ROAR cluster
 
 ## Graphical user interface
-1. Nagivate to [portal.aci.ics.psu.edu](https://portal.aci.ics.psu.edu)
-2. On the top, click the dropdown for "Interactive Apps"
-3. Click "RHEL7 Interactive Desktop"
-4. Change the "Allocation" drop-down to "wff3_g_g_lc_icds-training"
+1. Nagivate to [rcportal.hpc.psu.edu](https://rcportal.hpc.psu.edu/)
+2. In the "Interactive Apps", choose "Roar Collab RHEL8 Interactive Desktop"
 5. Under "Number of hours", select 10
-6. Under the "Node type" drop down, select the "ACI-b Standard Core"
+6. Change the number of nodes to 1, the number of cores to 4, and the memory to 64
 7. Click "Launch"
 
 After that, open a terminal (little black icon on the top bar, next to the firefox icon), and then enter the following commands:
 ```
-module use /gpfs/group/RISE/sw7/modules
 module load anaconda
-```
-
-## SSH
-```
-ssh <PSU ID>@submit.aci.ics.psu.edu
-qsub -A wff3_g_g_lc_icds-training -l walltime=5:00:00 -l nodes=1:ppn=4 -I
 module use /gpfs/group/RISE/sw7/modules
-module load anaconda
 ```
 # Shotgun metagenomic analysis
 This portion of the workshop will cover a few of the basic computational approaches to studying WGS metagenomic data. 
