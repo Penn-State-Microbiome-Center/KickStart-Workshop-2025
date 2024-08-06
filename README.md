@@ -33,11 +33,11 @@ A PSU email and access to Penn State’s Roar Collab system is required prior to
 A laptop is also required for the workshop. You can either bring your own or email Nichole Ginnan (nginnan@psu.edu) before _July 28th_ to rent one for free. 
 
 ## Schedule
-- Day 0 (1pm - 4pm) [OPTIONAL]: [Unix Basics and Intro to R Programming](/Day1-UnixBasics) - Emily Davenport 
+- Day 0 (1pm - 4pm) [OPTIONAL]: [Unix Basics and Intro to R Programming](/Day0-UnixBasics) - Emily Davenport 
 - Day 1 (9am - 3pm): Intro + [Basics of Microbiome Analysis - From Planning to Sequencing](/Day1-MicrobiomeAnalysisBasics) - Organizing Committee 
 - Day 2 (9am - 3pm): [Amplicon Data Analysis in R](/Day2-AmpliconR) - Sharifa Crandall and Erika Ganda
 - Day 3 (9am - 3pm): [Shotgun data analysis (assembly, binning, and profiling)](Day3-Shotgun/README.md) - David Koslicki
-- Day 4 (10am - 11pm): [Metabolomics](/Day2-Metabolomics) - Josh Kellogg
-- Day 4 (11am - 12pm): [Principles of Symbiosis](/Day3-Symbiosis) - Liana Burghardt
+- Day 4 (10am - 11pm): [Metabolomics](/Day4-Other) - Josh Kellogg
+- Day 4 (11am - 12pm): [Principles of Symbiosis](/Day4-Other) - Liana Burghardt
 - Day 4 (1pm - 3pm): Facility tours with Huck Genomics Core (Craig Praul) and Metabolomics Core (Sergei Koshkin)
 - Day 4 (3pm - ): Optional social event: Happy Hour or Creamery visit

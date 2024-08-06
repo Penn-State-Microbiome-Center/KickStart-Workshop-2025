@@ -1,0 +1,6 @@
+https://github.com/Penn-State-Microbiome-Center/KickStart-Workshop-2021/raw/main/Day5-Shotgun/Data/SRS014459-Stool.fastq.gz
+https://github.com/Penn-State-Microbiome-Center/KickStart-Workshop-2021/raw/main/Day5-Shotgun/Data/SRS014464-Anterior_nares.fastq.gz
+https://github.com/Penn-State-Microbiome-Center/KickStart-Workshop-2021/raw/main/Day5-Shotgun/Data/SRS014470-Tongue_dorsum.fastq.gz
+https://github.com/Penn-State-Microbiome-Center/KickStart-Workshop-2021/raw/main/Day5-Shotgun/Data/SRS014472-Buccal_mucosa.fastq.gz
+https://github.com/Penn-State-Microbiome-Center/KickStart-Workshop-2021/raw/main/Day5-Shotgun/Data/SRS014476-Supragingival_plaque.fastq.gz
+https://github.com/Penn-State-Microbiome-Center/KickStart-Workshop-2021/raw/main/Day5-Shotgun/Data/SRS014494-Posterior_fornix.fastq.gz
