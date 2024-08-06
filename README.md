@@ -1,4 +1,4 @@
-![IntroImage](images/IntroImage.pdf)
+![IntroImage](images/IntroImage.jpg)
 # KickStart-Workshop-2024
 Materials for the Fall 2024 PSU One Health Microbiome Center KickStart Workshop.
 
