@@ -15,30 +15,25 @@ While there are a lot of different goodies we could look at, we will focus just 
 Let's use the usual folder structure
 ```
 cd ~
-mkdir GATB_analysis
-cd GATB_analysis
-mkdir scripts output data
+mkdir -p GATB_analysis/{scripts,output,data} && cd GATB_analysis/
 ```
 This pipeline is installed in a different conda environment, so please do the following to activate it on your system
 ```
-module use /gpfs/group/RISE/sw7/modules
-module load anaconda
-conda activate gatb
+conda activate /storage/icds/RISE/training/microbiome/2024/envs/assembly
 ```
 
-If you want to install it in a different location, here are the steps:
-```
-conda create -y -n gatb scipy numpy mathstats pysam
-git clone --recursive https://github.com/GATB/gatb-minia-pipeline
-cd gatb-minia-pipeline ; make test
-export PATH="$PWD:$PATH"
-```
-
-Lastly, we will again obtain the (same) data:
+We will again obtain the (same) data:
 ```
 cd data
 wget -i https://raw.githubusercontent.com/Penn-State-Microbiome-Center/KickStart-Workshop-2022/main/Day5-Shotgun/Data/file_list.txt
 ls *.gz | xargs -P6 -I{} gunzip {}
+cd ..
+```
+and then finally install the tool:
+```
+git clone --recursive https://github.com/GATB/gatb-minia-pipeline
+cd gatb-minia-pipeline && make test
+export PATH="$PWD:$PATH"
 cd ..
 ```
 
