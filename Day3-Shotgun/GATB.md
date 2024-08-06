@@ -52,20 +52,11 @@ As with the other tools, the final contigs (or scaffolds, in this case) are cont
 about the quality of this assembly.
 
 ## Assess the assembly quality
-Let's activate our QUAST environment:
-```
-conda deactivate
-conda activate microbiome2
-```
-
-And then run QUAST on the assembly:
+Let's run QUAST on the assembly:
 ```
 quast -o output/quast_out -m 250 --circos --glimmer --rna-finding --single data/SRS014464-Anterior_nares.fasta output/default.fasta
 ```
-And view the output:
-```
-firefox output/quast_out/report.html
-```
+And view the output by opening a browser, and dragging the file `output/quast_out/report.html` to it.
 ![GATB](https://user-images.githubusercontent.com/6362936/128284961-4bd6722d-08d1-4f47-989d-342a22509754.PNG)
 
 
