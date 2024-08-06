@@ -7,9 +7,8 @@
 ## Activation on OpenDemand
 If you are taking part in the workshop, use the following commands to activate the environment.
 ```
-module use /gpfs/group/RISE/sw7/modules
 module load anaconda
-conda activate microbiome2
+conda activate /storage/icds/RISE/training/microbiome/2024/envs/microbiome
 ```
 
 ## Full installation
@@ -17,16 +16,16 @@ This instructions are _only_ if you would like to install it with conda elsewher
 The basic steps are: load conda, create the environment, then install the tool:
 ```bash
 module load anaconda3
-conda create -y --name metaphlan -c bioconda python=3.7 tbb=2020.2 metaphlan
-conda activate metaphlan
+conda create -y --name sourmash install bioconda::sourmash
+conda activate sourmash
 ```
 
 ## Set up directories and obtain the test data:
 - Make analysis folders:
 ```
 cd ~
-mkdir MetaPhlAn_analysis  #<<-- main analysis folder
-cd MetaPhlAn_analysis  #<<-- go inside this folder
+mkdir sourmash_analysis  #<<-- main analysis folder
+cd sourmash_analysis  #<<-- go inside this folder
 mkdir data output scripts  #<<-- make three directories: data, output, and scripts
 ```
 Then download the data
