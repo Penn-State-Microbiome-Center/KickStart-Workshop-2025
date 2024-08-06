@@ -1,4 +1,4 @@
-# Day 2 - Microbiome Analysis Basics
+# Day 1 - Microbiome Analysis Basics
 
 ## Goals
 1. Get an introduction into the microbiome field.
@@ -15,7 +15,7 @@
 1. Welcome and Introductions
 2. Sampling (Sharifa Crandall) - [pdf](Sampling_Day_2_Crandall_Kickstart.pdf)  
 3. Controls/Contamination (Emily Davenport - slides by Laura Weyrich) - [pdf](2022_KickStartWorkshop_Contamination.pdf)
-4. DNA Extraction/Library Prep (Emily Davenport) - [keynote](2020_DNA_extraction_and_library_prep_microbiome_center_kick_start_workshop_2020-08-04.key) | [pdf](2020_DNA_extraction_and_library_prep_microbiome_center_kick_start_workshop_2020-08-04.pdf)
+4. DNA Extraction/Library Prep (Veronica Roman-Reyna)
 6. Sequencing Technology (Darrell Cockburn)
-7. Downstream analysis and other tools (Estelle Couradeau) - pdf
+7. Downstream analysis and other tools (Estelle Couradeau)
 8. Final thougths and general discussion
