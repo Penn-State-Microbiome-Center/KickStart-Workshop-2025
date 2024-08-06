@@ -34,6 +34,8 @@ Then download the data
 cd data
 wget -i https://raw.githubusercontent.com/Penn-State-Microbiome-Center/KickStart-Workshop-2022/main/Day5-Shotgun/Data/file_list.txt  #<<-- downloads the data from github
 ls *.gz | xargs -P6 -I{} gunzip {}  #<<-- decompresses the data in parallel
+wget https://raw.githubusercontent.com/Penn-State-Microbiome-Center/KickStart-Workshop-2024/main/Day3-Shotgun/Data/sample_002.fna
+wget https://raw.githubusercontent.com/Penn-State-Microbiome-Center/KickStart-Workshop-2024/main/Day3-Shotgun/Data/sample_002.fna
 cd ..  #<<-- move back up a directory
 ```
 # The MetaGenomQuest Tutorial
@@ -71,7 +73,7 @@ One of the beneficial tasks of sourmash is to estimate similarity between sketch
 
 To start our sourmash tutorial, we will sketch our fasta file of interest: **sample_001.fna**. This file does not contain any meaningfull information but is just a play dataset for tutorial purposes. 
 
-`sourmash sketch dna datasets/sample_001.fna -p k=31,scaled=500`
+`sourmash sketch dna ../data/sample_001.fna -p k=31,scaled=500`
 
 |Parameter      |Description|
 |---------------|----------|
@@ -112,7 +114,7 @@ summary of sketches:
 
 Now that we feel a bit more comfortable with a sketching fasta file. Let's sketch a another file to compare it to the previous signature file we produced. Notice, that we are using the same ksize and scale factor, sourmash requires that two signatures have parameters tuned in the same way for comparison. 
 
-`sourmash sketch dna datasets/sample_002.fna -p k=31,scaled=500`
+`sourmash sketch dna data/sample_002.fna -p k=31,scaled=500`
 
 Let's estimate the containment index of our signature files utilizing `sourmash compare`!
 
@@ -159,7 +161,7 @@ As you may have noticed, the comparisons reported are between two fasta files as
 
 Let's modify our `sourmaash sketch` command by adding the `--singleton` flag, this will produce a signature file where each sequence is sketched individually.
 
-`sourmash sketch dna datasets/sample_001.fna --singleton -p k=31,scaled=500 -o sample_001.fna.singleton.sig`
+`sourmash sketch dna ..data/sample_001.fna --singleton -p k=31,scaled=500 -o sample_001.fna.singleton.sig`
 
 Compare the description between the first signature file we produced in which the `--singleton` flag was not utilized (**sample_001.fna.sig**) ato our new siganture file that does utilize the `--singleton` flag, **sample_001.fna.singleton.sig**.
 
@@ -226,19 +228,16 @@ similarity   match
 Download some reads and a reference genome:
 
 ```
-mkdir ~/data
-cd ~/data
+cd ../data
 curl -L https://osf.io/ruanf/download -o ecoliMG1655.fa.gz
 curl -L https://osf.io/q472x/download -o ecoli_ref-5m.fastq.gz
+cd ..
 ```
 
 Compute a scaled signature from our reads:
 
 ```
-mkdir ~/sourmash
-cd ~/sourmash
-
-sourmash sketch dna -p scaled=10000,k=31 ~/data/ecoli_ref*.fastq.gz -o ecoli-reads.sig
+sourmash sketch dna -p scaled=10000,k=31 ../data/ecoli_ref*.fastq.gz -o ecoli-reads.sig
 ```
 
 ## Compare reads to assemblies
@@ -248,7 +247,7 @@ Use case: how much of the read content is contained in the reference genome?
 Build a signature for an E. coli genome:
 
 ```
-sourmash sketch dna -p scaled=1000,k=31 ~/data/ecoliMG1655.fa.gz -o ecoli-genome.sig
+sourmash sketch dna -p scaled=1000,k=31 ../data/ecoliMG1655.fa.gz -o ecoli-genome.sig
 ```
 
 and now evaluate *containment*, that is, what fraction of the read content is
