@@ -85,6 +85,13 @@ The `--min_coverage_list` parameter is a list of coverage values needed for a gi
 considered in the sample. For example, if you have a coverage value of 0.6, then you're saying that you need 60% of 
 the genome to in the metagenome for it to be considered present.
 
+To view the output Excel document, use:
+```
+module load libreoffice
+libreoffice
+```
+and then open the `result.xlsx` file.
+
 We've noticed that a minimum coverage of 0.05 is a balance between sensitivity and specificity. If you make the 
 minimum coverage higher, you need to see more of the genome to say it's present, which is more specific but less 
 sensitive. And conversely, if you make the minimum coverage lower, you need to see less of the genome to say it's 
@@ -106,8 +113,7 @@ format.
 The `--genome_to_taxid` parameter is a file that maps genome names to their taxonomy IDs. Often you will need to 
 construct this file yourself if you are using a custom training database (which we encourage).
 
-Other formats available include: [cami](https://github.
-com/CAMI-challenge/contest_information/blob/master/file_formats/CAMI_TP_specification.mkd), [biom]
+Other formats available include: [cami](https://github.com/CAMI-challenge/contest_information/blob/master/file_formats/CAMI_TP_specification.mkd), [biom]
 (https://biom-format.org/), and [graphlan](http://segatalab.cibio.unitn.it/tools/graphlan/).
 
 This format allows for visualizing the taxonomy of the genomes present in your sample. For example, in our demo data,
