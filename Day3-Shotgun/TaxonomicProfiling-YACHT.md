@@ -105,16 +105,14 @@ If you want to convert the format of the output to something more standardized, 
 ```bash
 yacht convert --yacht_output result.xlsx --sheet_name min_coverage0.2 --genome_to_taxid demo/toy_genome_to_taxid.tsv --mode cami --sample_name 'MySample' --outfile_prefix cami_result --outdir ./
 ```
-This converts the output to the [CAMI profiling format](https://github.
-com/CAMI-challenge/contest_information/blob/master/file_formats/CAMI_TP_specification.mkd). **Note**: this format is for presence _and_ relative 
+This converts the output to the [CAMI profiling format](https://github.com/CAMI-challenge/contest_information/blob/master/file_formats/CAMI_TP_specification.mkd). **Note**: this format is for presence _and_ relative 
 abundances, even though here we just use it for presence. So abundance-based measurements should not be used on this 
 format. 
 
 The `--genome_to_taxid` parameter is a file that maps genome names to their taxonomy IDs. Often you will need to 
 construct this file yourself if you are using a custom training database (which we encourage).
 
-Other formats available include: [cami](https://github.com/CAMI-challenge/contest_information/blob/master/file_formats/CAMI_TP_specification.mkd), [biom]
-(https://biom-format.org/), and [graphlan](http://segatalab.cibio.unitn.it/tools/graphlan/).
+Other formats available include: [cami](https://github.com/CAMI-challenge/contest_information/blob/master/file_formats/CAMI_TP_specification.mkd), [biom](https://biom-format.org/), and [graphlan](http://segatalab.cibio.unitn.it/tools/graphlan/).
 
 This format allows for visualizing the taxonomy of the genomes present in your sample. For example, in our demo data,
 we have the following:
