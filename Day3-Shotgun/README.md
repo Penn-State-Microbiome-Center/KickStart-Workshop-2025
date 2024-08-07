@@ -1,13 +1,6 @@
 # Whole genome shotgun metagenomics analysis
-- [Reminder if you forget how to access the ACI ROAR cluster](#reminder-if-you-forget-how-to-access-the-aci-roar-cluster)
-  - [Graphical user interface](#graphical-user-interface)
-  - [SSH](#ssh)
-- [Shotgun metagenomic analysis](#shotgun-metagenomic-analysis)
-  - [Taxonomic profiling](#taxonomic-profiling)
-  - [Assembly](#assembly)
-  - [Binning](#binning)
 
-# Reminder if you forget how to access the ACI ROAR cluster
+# Reminder if you forget how to access the ACI ROAR Collab cluster
 
 ## Graphical user interface
 1. Nagivate to [rcportal.hpc.psu.edu](https://rcportal.hpc.psu.edu/)
