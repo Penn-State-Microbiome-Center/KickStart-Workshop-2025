@@ -37,7 +37,7 @@ A laptop is also required for the workshop. You can either bring your own or ema
 - Day 1 (9am - 3pm): Intro + [Basics of Microbiome Analysis - From Planning to Sequencing](/Day1-MicrobiomeAnalysisBasics) - Organizing Committee 
 - Day 2 (9am - 3pm): [Amplicon Data Analysis in R](/Day2-AmpliconR) - Sharifa Crandall and Erika Ganda
 - Day 3 (9am - 3pm): [Shotgun data analysis (assembly, binning, and profiling)](Day3-Shotgun/README.md) - David Koslicki
-- Day 4 (10am - 11pm): [Metabolomics](/Day4-Other) - Josh Kellogg
-- Day 4 (11am - 12pm): [Principles of Symbiosis](/Day4-Other) - Liana Burghardt
+- Day 4 (10am - 11pm): [Principles of Symbiosis](/Day4-Other) - Liana Burghardt 
+- Day 4 (11am - 12pm): [Metabolomics](/Day4-Other) - Josh Kellogg
 - Day 4 (1pm - 3pm): Facility tours with Huck Genomics Core (Craig Praul) and Metabolomics Core (Sergei Koshkin)
 - Day 4 (3pm - ): Optional social event: Happy Hour or Creamery visit
