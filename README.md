@@ -24,6 +24,7 @@ Materials for the Fall 2024 PSU One Health Microbiome Center KickStart Workshop.
 - Iyunoluwa Ademola-Popoola (ija5171@psu.edu)
 - Ana Fonseca (afonseca@psu.edu)
 - Raúl González-Pech (rag5851@psu.edu)
+- Judith Rodriguez (jzr5814@psu.edu)
 - Samantha Seibel (sls6550@psu.edu)
 - Christine Ta (cjt5751@psu.edu)
 
