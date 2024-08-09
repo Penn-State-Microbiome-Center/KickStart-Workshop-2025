@@ -5,7 +5,7 @@
 - [Download data files and code for 16S R tutorial](https://drive.google.com/file/d/108D4IyIGRfav6NTDiwkpOP-CpNBQgWMW/view?usp=sharing)
 - [Intro to Microbiome Viz Presentation (PDF)](MicrobiomeViz.pdf)
 
-# **Suggested Reading**
+### **Suggested Reading**
 
 Weinroth MD, Belk AD, Dean C, et al. Considerations and best practices in animal science 16S ribosomal RNA gene sequencing microbiome studies. J Anim Sci. 2022;100(2):skab346. doi:10.1093/jas/skab346 [Link](https://academic.oup.com/jas/article/100/2/skab346/6519592)
 
@@ -17,7 +17,7 @@ Callahan BJ, McMurdie PJ, Rosen MJ, Han AW, Johnson AJ, Holmes SP. DADA2: High-r
 
 Gloor GB, Macklaim JM, Pawlowsky-Glahn V, Egozcue JJ. Microbiome Datasets Are Compositional: And This Is Not Optional. Front Microbiol. 2017;8:2224. Published 2017 Nov 15. doi:10.3389/fmicb.2017.02224 [Link](https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.02224/full)
 
-# **Required Software**
+### **Required Software**
 
 Software:
 [R and Rstudio](https://cran.rstudio.com/)
@@ -25,12 +25,12 @@ Software:
 Packages: 
 [dada2](https://bioconductor.org/packages/release/bioc/html/dada2.html) , [phyloseq](https://bioconductor.org/packages/release/bioc/html/phyloseq.html), and [tidyverse](https://tidyverse.tidyverse.org/)
 
-# **Short lectures**
+### **Short lectures**
 [Link to an overview of sequencing methodologies](https://psu.mediaspace.kaltura.com/media/Next+Generation+Sequencing/1_12vugl0d)
 
 [Link to an overview of bioinformatics](https://psu.mediaspace.kaltura.com/media/Overview+of+Bioinformatics+and+Diversity+Metrics/1_1ih13k9f)
 
-# **Suggested Resources**
+### **Suggested Resources**
 
 ## Background: Coursera - gut check
 It is great to start grappling with concepts - videos are short<br>
