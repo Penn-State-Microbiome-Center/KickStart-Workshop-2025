@@ -20,6 +20,8 @@ mkdir -p GATB_analysis/{scripts,output,data} && cd GATB_analysis/
 This pipeline is installed in a different conda environment, so please do the following to activate it on your system
 ```
 conda activate /storage/icds/RISE/training/microbiome/2024/envs/assembly
+module use /storage/icds/RISE/training/microbiome/2024/modulefiles
+module load GATB
 ```
 
 We will again obtain the (same) data:
@@ -29,10 +31,14 @@ wget -i https://raw.githubusercontent.com/Penn-State-Microbiome-Center/KickStart
 ls *.gz | xargs -P6 -I{} gunzip {}
 cd ..
 ```
-and then finally install the tool:
+## Manual installation details
+If you find yourself needing to install this tool yourself, the following might be helpful:
 ```
+module load anaconda
+conda activate /storage/icds/RISE/training/microbiome/2024/envs/assembly
 git clone --recursive https://github.com/GATB/gatb-minia-pipeline
-cd gatb-minia-pipeline && make test
+cd gatb-minia-pipeline
+make
 export PATH="$PWD:$PATH"
 cd ..
 ```
