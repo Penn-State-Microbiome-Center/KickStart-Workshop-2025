@@ -2,6 +2,7 @@
 
 ## Resources
 - [Intro to Amplicon Sequencing Presentation (PDF)](Lecture_Intro_Amplicon_Sequencing_Day3_Crandall.pdf)
+- [2024 presentations PDF files](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/evk5387_psu_edu/ElOqaKmgAPVAqHTsW8G6aZIB1Ji_k80E3_0TR43I6FJI6Q?e=ZmnbEg) (need PSU authentication to access) 
 
 ### **Suggested Reading**
 
