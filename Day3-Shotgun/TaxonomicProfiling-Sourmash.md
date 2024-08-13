@@ -73,7 +73,7 @@ One of the beneficial tasks of sourmash is to estimate similarity between sketch
 
 To start our sourmash tutorial, we will sketch our fasta file of interest: **sample_001.fna**. This file does not contain any meaningfull information but is just a play dataset for tutorial purposes. 
 
-`sourmash sketch dna ../data/sample_001.fna -p k=31,scaled=500`
+`sourmash sketch dna ../Data/sample_001.fna -p k=31,scaled=500`
 
 |Parameter      |Description|
 |---------------|----------|
@@ -228,7 +228,7 @@ similarity   match
 Download some reads and a reference genome:
 
 ```
-cd ../data
+cd ../Data
 curl -L https://osf.io/ruanf/download -o ecoliMG1655.fa.gz
 curl -L https://osf.io/q472x/download -o ecoli_ref-5m.fastq.gz
 cd ..
@@ -237,7 +237,7 @@ cd ..
 Compute a scaled signature from our reads:
 
 ```
-sourmash sketch dna -p scaled=10000,k=31 ../data/ecoli_ref*.fastq.gz -o ecoli-reads.sig
+sourmash sketch dna -p scaled=10000,k=31 ../Data/ecoli_ref*.fastq.gz -o ecoli-reads.sig
 ```
 
 ## Compare reads to assemblies
@@ -247,7 +247,7 @@ Use case: how much of the read content is contained in the reference genome?
 Build a signature for an E. coli genome:
 
 ```
-sourmash sketch dna -p scaled=1000,k=31 ../data/ecoliMG1655.fa.gz -o ecoli-genome.sig
+sourmash sketch dna -p scaled=1000,k=31 ../Data/ecoliMG1655.fa.gz -o ecoli-genome.sig
 ```
 
 and now evaluate *containment*, that is, what fraction of the read content is
