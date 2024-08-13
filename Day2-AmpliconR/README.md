@@ -37,6 +37,10 @@ https://www.coursera.org/lecture/microbiome/welcome-to-the-course-AuMZk
 
 ## Coding:
 
+### 🧑‍💻 The best way to get started with bioinformatics
+For getting used to best practices in coding in the command line<br>
+https://www.biostarhandbook.com/index.html
+
 #### 🖥️ Getting started with R
 1.	https://www.codecademy.com/learn/learn-r
 2.	https://www.codecademy.com/search?query=R
@@ -44,10 +48,6 @@ https://www.coursera.org/lecture/microbiome/welcome-to-the-course-AuMZk
 #### 💻 Getting started with BASH
 Before you do biostars handbook do this quick shell one
 https://swcarpentry.github.io/shell-novice/
-
-#### 🧑‍💻 The best way to get started with bioinformatics
-For getting used to best practices in coding in the command line<br>
-https://www.biostarhandbook.com/index.html
 
 #### ✅ Scientific rigor, reproducibility, version control, and code-alongs
 Riffomonas has great tutorials to get started with R and reproducible research with version control is also a must.
