@@ -53,7 +53,7 @@ https://www.biostarhandbook.com/index.html
 Riffomonas has great tutorials to get started with R and reproducible research with version control is also a must.
 https://riffomonas.org/
 
-#### 🧬 16s analysis
+#### 🧬 16S analysis
 **16S analysis in R**<br>
 https://benjjneb.github.io/dada2/tutorial.html<br>
 
