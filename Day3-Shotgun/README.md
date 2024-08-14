@@ -12,7 +12,7 @@
 After that, open a terminal (little black icon on the top bar, next to the firefox icon), and then enter the following commands:
 ```
 module load anaconda
-module use /gpfs/group/RISE/sw7/modules
+conda activate /storage/icds/RISE/training/microbiome/2024/envs/microbiome
 ```
 # Shotgun metagenomic analysis
 This portion of the workshop will cover a few of the basic computational approaches to studying WGS metagenomic data. 
