@@ -10,8 +10,7 @@ YACHT stands for **Y**es/No **A**nswers to **C**ommunity membership via **H**ypo
 2. 3. the coverage $c$ needed for a given microbe's genome to be considered present in the sample. 
  
 YACHT then outputs a file indicating the presence and absence of each of the organisms among those in the 
-reference database in the sample. For more detailed explanation of the method, refer to the associated [publication]
-(https://doi.org/10.1093/bioinformatics/btae047).
+reference database in the sample. For more detailed explanation of the method, refer to the associated [publication](https://doi.org/10.1093/bioinformatics/btae047).
 
 ## YACHT workflow
 
