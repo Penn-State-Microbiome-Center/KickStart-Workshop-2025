@@ -314,7 +314,7 @@ sourmash index ecolidb ecoli_many_sigs/*.sig
 and now we can search!
 
 ```
-sourmash search ecoli-genome.sig ecolidb.sbt.zip -n 20
+sourmash search ecoli-metagenome.sig ecolidb.sbt.zip -n 20
 ```
 
 You should see output like this:
