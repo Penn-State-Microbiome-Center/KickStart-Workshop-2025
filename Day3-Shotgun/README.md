@@ -1,8 +1,14 @@
-# Whole genome shotgun metagenomics analysis
+# Day 3: Metabolomics and Metagenomics
 
-# Reminder if you forget how to access the ACI ROAR Collab cluster
+## Metabolomics:
 
-## Graphical user interface
+Intro to Metabolomics (Josh Kellogg) - [pdf](MicrobiomeKickstartLecture_Kellogg.pdf)
+
+## Whole genome shotgun metagenomics analysis
+
+### Reminder if you forget how to access the ACI ROAR Collab cluster
+
+#### Graphical user interface
 1. Nagivate to [rcportal.hpc.psu.edu](https://rcportal.hpc.psu.edu/)
 2. In the "Interactive Apps", choose "Roar Collab RHEL8 Interactive Desktop"
 5. Under "Number of hours", select 10
@@ -14,7 +20,7 @@ After that, open a terminal (little black icon on the top bar, next to the firef
 module load anaconda
 conda activate /storage/icds/RISE/training/microbiome/2024/envs/microbiome
 ```
-# Shotgun metagenomic analysis
+### Shotgun metagenomic analysis
 This portion of the workshop will cover a few of the basic computational approaches to studying WGS metagenomic data. 
 In contrast to 16S rRNA studies (which have platforms like QIIME), there is no agreed-upon "all-in-one" analysis platform for WGS metagenomic analysis.
 There are a few pretty comprehensive platforms such as:
@@ -28,17 +34,17 @@ As such, we will be covering some of the current state-of-the-art (according to 
 ![Main slides](https://user-images.githubusercontent.com/6362936/128754520-4e2852aa-52b4-43a5-9e68-4e6f4f030379.png)
 
 
-## Taxonomic profiling
+### Taxonomic profiling
 In the [Taxonomic Profiling](TaxonomicProfiling.md) section, we will be covering a couple of tools capable of answering the question:
 "Which taxa are present in my metagenome, and at what relative abundance?
 
-## Assembly
+### Assembly
 In the [Assembly](Assembly.md) section, we will cover a couple tools that will take as input your short sequences and assemble them into contigs and/or scaffolds. 
 
-## Binning
+#### Binning
 In the [Binning](Binning.md) section, we will cover tools that either:
 1. Cluster the assembled contigs into putative single genome origin bins (genome binning)
 2. Cluster the assembled contigs into bins which correspond to different taxa (taxonomic binning)
 
-# Please proceed now to the [Taxonomic Profiling](TaxonomicProfiling.md) section
+## Please proceed now to the [Taxonomic Profiling](TaxonomicProfiling.md) section
 
