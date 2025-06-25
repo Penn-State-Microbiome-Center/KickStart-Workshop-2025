@@ -30,7 +30,7 @@ A laptop is also required for the workshop. You can either bring your own or ema
 ## Schedule
 - Day 0 (1pm - 4pm) [OPTIONAL]: [Unix Basics and Intro to R Programming](/Day0-UnixBasics) - Emily Davenport 
 - Day 1 (9am - 4pm): Intro + [Basics of Microbiome Analysis - From Planning to Sequencing](/Day1-MicrobiomeAnalysisBasics) - Organizing Committee 
-- Day 2 (9am - 10am): [Metabolomics](/Day2-AmpliconR) - Josh Kellogg
+- Day 2 (9am - 10pm): [Studying Symbiosis through Sequencing](/Day2-AmpliconR) - Liana Burghardt 
 - Day 2 (10am - 4pm): [Amplicon Data Analysis in R](/Day2-AmpliconR) - Erika Ganda
-- Day 3 (9am - 10pm): [Studying Symbiosis through Sequencing](/Day3-Shotgun) - Liana Burghardt 
+- Day 3 (9am - 10am): [Metabolomics](/Day3-Shotgun) - Josh Kellogg
 - Day 3 (10am - 4pm): [Shotgun data analysis (assembly, binning, and profiling)](Day3-Shotgun/README.md) - David Koslicki
