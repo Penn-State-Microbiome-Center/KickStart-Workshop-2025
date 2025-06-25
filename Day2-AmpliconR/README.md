@@ -1,10 +1,14 @@
-# Amplicon analysis in R
+# Day 2: Symbiosis and Amplicon analysis in R
 
-## Resources
+## Morning Lecture:
+Studying Symbiosis through Sequencing (Liana Burghardt) - [pdf](MicrobiomeKickStart_Burghardt_Aug2024.pdf)
+
+## Amplicon Analysis in R: 
+### Resources
 - [Intro to Amplicon Sequencing Presentation (PDF)](Lecture_Intro_Amplicon_Sequencing_Day3_Crandall.pdf)
 - [2024 presentations PDF files](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/evk5387_psu_edu/ElOqaKmgAPVAqHTsW8G6aZIB1Ji_k80E3_0TR43I6FJI6Q?e=ZmnbEg) (need PSU authentication to access) 
 
-### **Suggested Reading**
+#### **Suggested Reading**
 
 Weinroth MD, Belk AD, Dean C, et al. Considerations and best practices in animal science 16S ribosomal RNA gene sequencing microbiome studies. J Anim Sci. 2022;100(2):skab346. doi:10.1093/jas/skab346 [Link](https://academic.oup.com/jas/article/100/2/skab346/6519592)
 
@@ -16,7 +20,7 @@ Callahan BJ, McMurdie PJ, Rosen MJ, Han AW, Johnson AJ, Holmes SP. DADA2: High-r
 
 Gloor GB, Macklaim JM, Pawlowsky-Glahn V, Egozcue JJ. Microbiome Datasets Are Compositional: And This Is Not Optional. Front Microbiol. 2017;8:2224. Published 2017 Nov 15. doi:10.3389/fmicb.2017.02224 [Link](https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.02224/full)
 
-### **Required Software**
+#### **Required Software**
 
 Software:
 [R and Rstudio](https://cran.rstudio.com/)
@@ -24,36 +28,36 @@ Software:
 Packages: 
 [dada2](https://bioconductor.org/packages/release/bioc/html/dada2.html) , [phyloseq](https://bioconductor.org/packages/release/bioc/html/phyloseq.html), and [tidyverse](https://tidyverse.tidyverse.org/)
 
-### **Short lectures**
+#### **Short lectures**
 [Link to an overview of sequencing methodologies](https://psu.mediaspace.kaltura.com/media/Next+Generation+Sequencing/1_12vugl0d)
 
 [Link to an overview of bioinformatics](https://psu.mediaspace.kaltura.com/media/Overview+of+Bioinformatics+and+Diversity+Metrics/1_1ih13k9f)
 
-### **Suggested Resources**
+#### **Suggested Resources**
 
-## Background: Coursera - gut check
+### Background: Coursera - gut check
 It is great to start grappling with concepts - videos are short<br>
 https://www.coursera.org/lecture/microbiome/welcome-to-the-course-AuMZk
 
-## Coding:
+### Coding:
 
-### 🧑‍💻 The best way to get started with bioinformatics
+#### 🧑‍💻 The best way to get started with bioinformatics
 For getting used to best practices in coding in the command line<br>
 https://www.biostarhandbook.com/index.html
 
-#### 🖥️ Getting started with R
+##### 🖥️ Getting started with R
 1.	https://www.codecademy.com/learn/learn-r
 2.	https://www.codecademy.com/search?query=R
    
-#### 💻 Getting started with BASH
+##### 💻 Getting started with BASH
 Before you do biostars handbook do this quick shell one
 https://swcarpentry.github.io/shell-novice/
 
-#### ✅ Scientific rigor, reproducibility, version control, and code-alongs
+##### ✅ Scientific rigor, reproducibility, version control, and code-alongs
 Riffomonas has great tutorials to get started with R and reproducible research with version control is also a must.
 https://riffomonas.org/
 
-#### 🧬 16S analysis
+##### 🧬 16S analysis
 **16S analysis in R**<br>
 https://benjjneb.github.io/dada2/tutorial.html<br>
 
