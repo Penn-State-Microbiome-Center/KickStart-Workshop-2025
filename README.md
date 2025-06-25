@@ -5,7 +5,7 @@ Materials for the Fall 2025 PSU One Health Microbiome Center KickStart Workshop.
 ## Details
 **Dates**: August 5 - 8, 2025  (Optional intro to Unix/R on August 5th, Full workshop August 6 - 8th)  
 **Times**: August 5th: 1pm - 4pm; August 6 - 8th: 9am - 4pm  
-**Location**: 106 AVBS (in person only)
+**Location**: Life Sciences 010 (in person only)
 
 ### Organizers
 - Molly Bletz	(mcb6342@psu.edu)
