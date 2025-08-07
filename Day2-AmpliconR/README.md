@@ -26,6 +26,7 @@ Article: [Beyond Normalization: Incorporating Scale Uncertainty in Microbiome an
 
 Package: [ALDEx2](https://www.bioconductor.org/packages/release/bioc/html/ALDEx2.html)
 
+
 #### **Required Software**
 
 Software:
@@ -49,6 +50,7 @@ Veterinary Epidemiologic Research is a comprehensive text covering the key princ
 [Meet the Metaorganism](https://metaorganism.app/en)
 
 ## **Short lectures**
+
 [Link to an overview of sequencing methodologies](https://psu.mediaspace.kaltura.com/media/Next+Generation+Sequencing/1_12vugl0d)
 
 [Link to an overview of bioinformatics](https://psu.mediaspace.kaltura.com/media/Overview+of+Bioinformatics+and+Diversity+Metrics/1_1ih13k9f)
@@ -61,6 +63,9 @@ Article: [‘Tiny biome tales’: playing a game to understand the human microbi
 Laura Boykin: [How we're using DNA tech to help farmers fight crop diseases](https://www.ted.com/talks/laura_boykin_how_we_re_using_dna_tech_to_help_farmers_fight_crop_diseases?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare)
 Steffanie Strathdee: [How Sewage Saved My Husband's Life from a Superbug](https://youtu.be/AbAZU8FqzX4?si=JDqz6OFD1Vb9Y0Wu) and [How does a virus eat bacteria?](https://www.cnn.com/videos/tv/2022/07/08/steffanie-strathdee-life-itself-wellness.cnn)
 Rob Knight: [How our microbes make us who we are](https://www.ted.com/talks/rob_knight_how_our_microbes_make_us_who_we_are?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare)
+
+#### **Suggested Resources**
+
 
 ### Background: Coursera - gut check
 It is great to start grappling with concepts - videos are short<br>
