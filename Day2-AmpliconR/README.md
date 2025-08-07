@@ -20,6 +20,13 @@ Callahan BJ, McMurdie PJ, Rosen MJ, Han AW, Johnson AJ, Holmes SP. DADA2: High-r
 
 Gloor GB, Macklaim JM, Pawlowsky-Glahn V, Egozcue JJ. Microbiome Datasets Are Compositional: And This Is Not Optional. Front Microbiol. 2017;8:2224. Published 2017 Nov 15. doi:10.3389/fmicb.2017.02224 [Link](https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.02224/full)
 
+# **Best practices for differential abundance analysis**
+
+Article: [Beyond Normalization: Incorporating Scale Uncertainty in Microbiome and Gene Expression Analysis](https://www.biorxiv.org/content/10.1101/2024.04.01.587602v1.full)
+
+Package: [ALDEx2](https://www.bioconductor.org/packages/release/bioc/html/ALDEx2.html)
+
+
 #### **Required Software**
 
 Software:
@@ -28,12 +35,37 @@ Software:
 Packages: 
 [dada2](https://bioconductor.org/packages/release/bioc/html/dada2.html) , [phyloseq](https://bioconductor.org/packages/release/bioc/html/phyloseq.html), and [tidyverse](https://tidyverse.tidyverse.org/)
 
-#### **Short lectures**
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+# 🔹Extra Material🔹
+
+## **Textbook on experimental design, bias, etc - Veterinary Epidemiologic Research**
+
+[Veterinary Epidemiologic Research](https://projects.upei.ca/ver/)
+
+Dohoo, I., Martin, W., & Stryhn, H. (2009). Veterinary epidemiologic research (2nd ed.). VER Inc
+
+Veterinary Epidemiologic Research is a comprehensive text covering the key principles and methods used in veterinary epidemiologic research. It is written primarily for researchers and graduate students in veterinary epidemiology, but the material is equally applicable to those in related disciplines (human epidemiology, public health etc).
+
+## **Online "textbook" on fundamental concepts of microbiome**
+[Meet the Metaorganism](https://metaorganism.app/en)
+
+## **Short lectures**
+
 [Link to an overview of sequencing methodologies](https://psu.mediaspace.kaltura.com/media/Next+Generation+Sequencing/1_12vugl0d)
 
 [Link to an overview of bioinformatics](https://psu.mediaspace.kaltura.com/media/Overview+of+Bioinformatics+and+Diversity+Metrics/1_1ih13k9f)
 
+## **Online educational game on fundamental concepts of microbiome**
+[Tiny Biome Tales](https://microbiome.gamelabgraz.at/)
+Article: [‘Tiny biome tales’: playing a game to understand the human microbiome](https://www.the-microbiologist.com/news/tiny-biome-tales-playing-a-game-to-understand-the-human-microbiome/3858.article)
+
+## **Relevant TED talks**
+Laura Boykin: [How we're using DNA tech to help farmers fight crop diseases](https://www.ted.com/talks/laura_boykin_how_we_re_using_dna_tech_to_help_farmers_fight_crop_diseases?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare)
+Steffanie Strathdee: [How Sewage Saved My Husband's Life from a Superbug](https://youtu.be/AbAZU8FqzX4?si=JDqz6OFD1Vb9Y0Wu) and [How does a virus eat bacteria?](https://www.cnn.com/videos/tv/2022/07/08/steffanie-strathdee-life-itself-wellness.cnn)
+Rob Knight: [How our microbes make us who we are](https://www.ted.com/talks/rob_knight_how_our_microbes_make_us_who_we_are?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare)
+
 #### **Suggested Resources**
+
 
 ### Background: Coursera - gut check
 It is great to start grappling with concepts - videos are short<br>
