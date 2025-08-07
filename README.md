@@ -1,42 +1,38 @@
 ![IntroImage](images/IntroImage.jpg)
-# KickStart-Workshop-2023
-Materials for the Fall 2023 PSU One Health Microbiome Center KickStart Workshop
+# KickStart-Workshop-2025
+Materials for the Fall 2025 PSU One Health Microbiome Center KickStart Workshop.
 
 ## Details
-**Dates**: August 9 - 11, 2023  
-**Time**: 9am - 5pm each day  
-**Location**: In person in 106 AVBS
+**Dates**: August 5 - 8, 2025  (Optional intro to Unix/R on August 5th, Full workshop August 6 - 8th)  
+**Times**: August 5th: 1pm - 4pm; August 6 - 7th: 9am - 4pm; August 8th: 10am - 4pm    
+**Location**: Life Sciences 010 (in person only)
 
-### Tutors:
-- David Koslicki	(dmk333@psu.edu)
-- Emily Davenport	(exd44@psu.edu)  
-- Sharifa Crandall	(sgcrandall@psu.edu)  
+### Organizers
+- Molly Bletz	(mcb6342@psu.edu)
+- Francisco Dini-Andreote	(adreote@psu.edu)
+- Emily Davenport	(co-chair) (exd44@psu.edu)
+- Grace Deitzler (co-chair)	(dfd5230@psu.edu)
+- Liana Burghardt 	(liana.burghardt@psu.edu)
 - Estelle Couradeau	(efc5279@psu.edu) 
-- Darrell Cockburn	(dwc30@psu.edu)  
+- Darrell Cockburn	(dwc30@psu.edu)
 - Erika Ganda		(ganda@psu.edu)
-- Francisco Dini-Andreote (co-chair)	(adreote@psu.edu)
-- Nichole Ginnan (co-chair)	(nginnan@psu.edu)
+- David Koslicki	(dmk333@psu.edu)
 
 ### TAs:
-- Jamie Spychalla 
-- Abby Gancz
-- Christine Ta
-- Daniela Betancurt
-- Hanh Tran
-- Polina Tikhonova
+- Theo Newbold  (castrocln68@psu.edu)
+- Melanie Medina Lopez  (mkm6528@psu.edu)
+- Jessi Gaydos  (jee5055@psu.edu)
+- Hanh Tran  (hanh.tran@psu.edu)
+- Kayla Clouse  (kaylamclouse@psu.edu)
 
 ## Requirements
-A PSU email and access to Penn State’s Roar system is required prior to the workshop. You can do this by going to https://accounts.aci.ics.psu.edu, and entering your information.  For the purposes of this workshop, please list Francisco Dini Andreote (fjd5141) as your account sponsor and put "2023 Microbiome Center Summer Workshop" into the "Research Description" field of the account request form. 
+A PSU email and access to Penn State’s Roar Collab system is required prior to the workshop. You can do this by going to https://accounts.aci.ics.psu.edu, and entering your information.  For the purposes of this workshop, please list Emily Davenport (exd44@psu) as your account sponsor and put "2025 Microbiome Center Summer Workshop" into the "Research Description" field of the account request form. 
 
-A laptop is also required for the workshop. You can either bring your own or email Nichole Ginnan (nginnan@psu.edu) before _July 28th_ to rent one for free. 
+A laptop is also required for the workshop. You can either bring your own or email Grace Deitzler (gfd5230@psu.edu) before _July 25th_ to rent one for free. 
 
 ## Schedule
-- Day 1 morning (8:30am - 12:30pm): Intro + [Basics of Microbiome Analysis - From Planning to Sequencing](/Day1-MicrobiomeAnalysisBasics) - Organizing Committee
-- Day 1 lunch (12:30pm - 1:30pm)
-- Day 1 afternoon (1:30pm - 5pm) [OPTIONAL]: [Unix Basics and Intro to R Programming](/Day1-UnixBasics) - Emily Davenport  
-- Day 2 morning (10am - 12pm): [Metabolomics](/Day2-Metabolomics) - Josh Kellogg
-- Day 2 lunch and discussion (12pm - 1pm)
-- Day 2 afternoon (1pm - 5pm): [Amplicon Data Analysis in R](/Day2-AmpliconR) - Sharifa Crandall and Erika Ganda
-- Day 3 afternoon (12:30pm - 2pm): [Principles of Symbiosis](/Day3-Symbiosis) - Liana Burghardt
-- Day 3 afternoon (2pm - 5pm): [Shotgun data analysis (assembly, binning, and profiling)](Day3-Shotgun/README.md) - David Koslicki
-- Day 3 afternoon (5pm - ) [OPTIONAL]: Happy Hour Downtown [TBD]
+- Day 0 (1pm - 4pm) [OPTIONAL]: [Unix Basics and Intro to R Programming](/Day0-UnixBasics) - Emily Davenport 
+- Day 1 (9am - 4pm): Intro + [Basics of Microbiome Analysis - From Planning to Sequencing](/Day1-MicrobiomeAnalysisBasics) - Organizing Committee 
+- Day 2 (9am - 10pm): [Studying Symbiosis through Sequencing](/Day2-AmpliconR) - Liana Burghardt 
+- Day 2 (10am - 4pm): [Amplicon Data Analysis in R](/Day2-AmpliconR) - Erika Ganda
+- Day 3 (10am - 4pm): [Shotgun data analysis (assembly, binning, and profiling)](Day3-Shotgun/README.md) - David Koslicki

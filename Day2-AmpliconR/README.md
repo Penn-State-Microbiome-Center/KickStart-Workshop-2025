@@ -5,6 +5,7 @@ Studying Symbiosis through Sequencing (Liana Burghardt) - [pdf](MicrobiomeKickSt
 
 ## Amplicon Analysis in R: 
 ### Resources
+
 - [2025 presentations PDF files](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/evk5387_psu_edu/EvUN_epjzhtOs8fixwmt7vwB1vqGgXjR2VIcBbQCfU90Qw?e=PR420C) (need PSU authentication to access) 
 
 #### **Suggested Reading**
@@ -19,12 +20,12 @@ Callahan BJ, McMurdie PJ, Rosen MJ, Han AW, Johnson AJ, Holmes SP. DADA2: High-r
 
 Gloor GB, Macklaim JM, Pawlowsky-Glahn V, Egozcue JJ. Microbiome Datasets Are Compositional: And This Is Not Optional. Front Microbiol. 2017;8:2224. Published 2017 Nov 15. doi:10.3389/fmicb.2017.02224 [Link](https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.02224/full)
 
+
 # **Best practices for differential abundance analysis**
 
 Article: [Beyond Normalization: Incorporating Scale Uncertainty in Microbiome and Gene Expression Analysis](https://www.biorxiv.org/content/10.1101/2024.04.01.587602v1.full)
 
 Package: [ALDEx2](https://www.bioconductor.org/packages/release/bioc/html/ALDEx2.html)
-
 
 #### **Required Software**
 
